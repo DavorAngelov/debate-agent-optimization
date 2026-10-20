@@ -1,0 +1,9 @@
+name: explore_amazon
+seed: 42
+dataset: amazon
+split: test        # train | val | test | test-0.1
+subset_size: 100   # fixed-seed subset used by all baselines
+load_skb: true     # downloads the processed SKB on first run (several GB)
+data_root: data/stark
+num_examples: 3    # queries to print in full
+output_dir: results/explore_amazon

@@ -1,0 +1,45 @@
+{
+  "dataset": "amazon",
+  "splits": {
+    "train": 5910,
+    "val": 1548,
+    "test": 1642,
+    "test-0.1": 164
+  },
+  "subset": {
+    "split": "test",
+    "size": 100,
+    "seed": 42
+  },
+  "answers_per_query": {
+    "mean": 5.45,
+    "median": 3.0,
+    "min": 1,
+    "max": 19
+  },
+  "query_words": {
+    "mean": 25.2,
+    "median": 24.0,
+    "min": 8,
+    "max": 52
+  },
+  "skb": {
+    "num_nodes": 1035542,
+    "node_types": {
+      "product": 957192,
+      "brand": 75215,
+      "category": 1423,
+      "color": 1712
+    },
+    "relation_types": [
+      "also_buy",
+      "also_view",
+      "has_brand",
+      "has_category",
+      "has_color"
+    ],
+    "candidate_type": [
+      "product"
+    ]
+  }
+}

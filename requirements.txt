@@ -1,0 +1,10 @@
+stark-qa
+numpy<2  # ogb -> rdkit wheels break on NumPy 2
+torch
+openai
+anthropic
+python-dotenv
+pyyaml
+pandas
+tqdm
+matplotlib
