@@ -16,8 +16,9 @@ __pycache__/
 # Experiment outputs (keep summaries, ignore raw dumps)
 results/**/raw/
 
-# Claude Code local settings
-.claude/settings.local.json
+# Claude Code files (kept local, not on GitHub)
+.claude/
+CLAUDE.md
 
 # IDE / OS
 .idea/
