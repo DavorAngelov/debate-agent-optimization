@@ -37,8 +37,8 @@
 - Ablations: number of debate rounds, number of agents.
 - Extension (RewardBench-style): measure judge reliability (length, position and sycophancy bias),
   and try a reward model as the judge.
-- Compute: API models (OpenAI/Anthropic) or a local Ollama model (e.g. Qwen2.5-7B). No GPU training.
-  Keep the API budget small.
+- Compute: **zero budget.** No paid APIs. LLM agents run on a local Ollama model (e.g. Qwen2.5-7B).
+  Embeddings come from free precomputed files or local sentence-transformers. No GPU training.
 
 ## Repo setup (planned)
 ```
@@ -48,8 +48,8 @@ debate-agent-optimization/
 ├── scripts/        # run_baseline.py, run_debate.py, explore_stark.py
 ├── results/  notebooks/  paper/
 ├── external/       # gitignored: clones of zou-group/avatar and snap-stanford/stark
-├── .env.example    # OPENAI_API_KEY, ANTHROPIC_API_KEY (.env is gitignored)
-└── requirements.txt  # stark-qa, torch, openai, anthropic, python-dotenv, pyyaml, pandas, tqdm, matplotlib
+├── .env.example    # OLLAMA_BASE_URL (.env is gitignored)
+└── requirements.txt  # stark-qa, numpy<2, torch, python-dotenv, pyyaml, pandas, tqdm, matplotlib
 ```
 
 ## Roadmap (~8 weeks)

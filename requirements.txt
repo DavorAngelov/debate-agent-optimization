@@ -1,8 +1,8 @@
+# Zero-cost project: no paid APIs. stark-qa pulls in the openai/anthropic SDKs because it
+# imports them at load time, but we never call them and no API keys are configured.
 stark-qa
 numpy<2  # ogb -> rdkit wheels break on NumPy 2
 torch
-openai
-anthropic
 python-dotenv
 pyyaml
 pandas
