@@ -3,6 +3,7 @@
 stark-qa
 numpy<2  # ogb -> rdkit wheels break on NumPy 2
 torch
+gdown  # downloads STaRK's free precomputed embeddings from Google Drive
 python-dotenv
 pyyaml
 pandas

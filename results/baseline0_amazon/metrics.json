@@ -1,0 +1,39 @@
+{
+  "config": {
+    "name": "baseline0_amazon",
+    "seed": 42,
+    "dataset": "amazon",
+    "method": "vss",
+    "emb_dir": "emb/amazon/text-embedding-ada-002",
+    "top_k": 100,
+    "eval_sets": [
+      {
+        "name": "subset100",
+        "split": "test",
+        "size": 100
+      },
+      {
+        "name": "test_full",
+        "split": "test",
+        "size": null
+      }
+    ],
+    "output_dir": "results/baseline0_amazon"
+  },
+  "results": {
+    "subset100": {
+      "n": 100,
+      "hit@1": 0.4,
+      "hit@5": 0.66,
+      "recall@20": 0.5803353104154187,
+      "mrr": 0.5222372993214293
+    },
+    "test_full": {
+      "n": 1642,
+      "hit@1": 0.3982947624847747,
+      "hit@5": 0.6339829476248477,
+      "recall@20": 0.5375120854461537,
+      "mrr": 0.5096307452123277
+    }
+  }
+}

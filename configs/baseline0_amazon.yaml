@@ -1,0 +1,10 @@
+name: baseline0_amazon
+seed: 42
+dataset: amazon
+method: vss                # Baseline 0: plain vector retrieval
+emb_dir: emb/amazon/text-embedding-ada-002   # free precomputed STaRK embeddings
+top_k: 100
+eval_sets:
+  - {name: subset100, split: test, size: 100}    # the shared 100-query subset
+  - {name: test_full, split: test, size: null}   # full test split, for comparison with the STaRK paper
+output_dir: results/baseline0_amazon
