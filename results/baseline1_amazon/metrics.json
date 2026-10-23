@@ -1,0 +1,20 @@
+{
+  "config": {
+    "name": "baseline1_amazon",
+    "seed": 42,
+    "dataset": "amazon",
+    "data_root": "data/stark",
+    "model": "qwen2.5:7b",
+    "candidates_file": "results/baseline0_amazon/per_query_subset100.json",
+    "doc_chars": 300,
+    "output_dir": "results/baseline1_amazon"
+  },
+  "instructions": "Rank the products by how well they match the customer's request.",
+  "metrics": {
+    "hit@1": 0.45,
+    "hit@5": 0.71,
+    "recall@20": 0.5803353104154187,
+    "mrr": 0.5641591355840583,
+    "avg_tokens": 1725.63
+  }
+}

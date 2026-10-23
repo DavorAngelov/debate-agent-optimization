@@ -1,0 +1,8 @@
+name: baseline1_amazon
+seed: 42
+dataset: amazon
+data_root: data/stark
+model: qwen2.5:7b
+candidates_file: results/baseline0_amazon/per_query_subset100.json
+doc_chars: 300
+output_dir: results/baseline1_amazon
