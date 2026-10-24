@@ -1,0 +1,12 @@
+name: baseline2_amazon
+seed: 42
+dataset: amazon
+data_root: data/stark
+model: qwen2.5:7b
+method: comparator
+train_file: results/baseline0_amazon/per_query_train30.json
+test_file: results/baseline0_amazon/per_query_subset100.json
+doc_chars: 300
+rounds: 5
+examples: 3
+output_dir: results/baseline2_amazon

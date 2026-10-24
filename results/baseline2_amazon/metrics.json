@@ -1,0 +1,24 @@
+{
+  "config": {
+    "name": "baseline2_amazon",
+    "seed": 42,
+    "dataset": "amazon",
+    "data_root": "data/stark",
+    "model": "qwen2.5:7b",
+    "method": "comparator",
+    "train_file": "results/baseline0_amazon/per_query_train30.json",
+    "test_file": "results/baseline0_amazon/per_query_subset100.json",
+    "doc_chars": 300,
+    "rounds": 5,
+    "examples": 3,
+    "output_dir": "results/baseline2_amazon"
+  },
+  "instructions": "When ranking products for customer requests, ensure:\n1. The first product listed best matches the customer\u2019s specified needs.\n2. Consider all provided criteria, such as material quality, functionality, and any additional preferences or requirements mentioned.\n3. Prioritize functional factors over aesthetic ones unless explicitly stated by the customer.\n4. Verify that the chosen product aligns with the overall request context and doesn't conflict with other mentioned preferences.\n5. Cross-check with correct products to ensure accuracy in matching needs and criteria.",
+  "metrics": {
+    "hit@1": 0.45,
+    "hit@5": 0.7,
+    "recall@20": 0.5803353104154187,
+    "mrr": 0.5662984643925045,
+    "optimizer_tokens": 5809
+  }
+}

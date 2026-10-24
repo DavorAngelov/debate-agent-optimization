@@ -7,4 +7,5 @@ top_k: 100
 eval_sets:
   - {name: subset100, split: test, size: 100}    # the shared 100-query subset
   - {name: test_full, split: test, size: null}   # full test split, for comparison with the STaRK paper
+  - {name: train30, split: train, size: 30}
 output_dir: results/baseline0_amazon

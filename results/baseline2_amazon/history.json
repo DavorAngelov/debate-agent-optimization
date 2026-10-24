@@ -1,0 +1,38 @@
+[
+  {
+    "round": 0,
+    "instructions": "Rank the products by how well they match the customer's request.",
+    "train_mrr": 0.6216137566137565,
+    "kept": true
+  },
+  {
+    "round": 1,
+    "instructions": "When ranking products for customer requests, ensure:\n1. Accurately match the requested features, attributes, and preferences.\n2. Verify that the top-ranked product aligns with the customer's explicit needs.\n3. Consider additional criteria such as price, availability, and brand reputation if necessary.\n4. Double-check against alternative options to ensure the highest relevance before ranking.\n\nBy following these steps, you can provide more accurate and satisfactory product recommendations.",
+    "train_mrr": 0.6209656084656083,
+    "kept": false
+  },
+  {
+    "round": 2,
+    "instructions": "When ranking products, ensure each ranked item directly matches the customer's request in terms of brand, features, and purpose. Prioritize accuracy over popularity or relevance scores. Cross-check each product against the request to confirm it fully meets the customer\u2019s needs before ranking. Adjust rankings based on how closely each product aligns with the request, ensuring the best match is first.",
+    "train_mrr": 0.5918518518518517,
+    "kept": false
+  },
+  {
+    "round": 3,
+    "instructions": "Rank products based on how well they match the customer's request by:\n1. Ensuring the product specifications meet the customer\u2019s requirements (e.g., compatibility, features).\n2. Prioritizing reviews and feedback that confirm the product aligns with the request.\n3. Avoiding products that, while similar, do not fully satisfy the specific needs outlined in the request.",
+    "train_mrr": 0.6210185185185184,
+    "kept": false
+  },
+  {
+    "round": 4,
+    "instructions": "When ranking products for customer requests, ensure that:\n1. The first product listed best matches the customer\u2019s specified needs.\n2. Consider all provided criteria, such as weight capacity, material quality, style, and functionality.\n3. Verify that the chosen product aligns with any additional preferences or requirements mentioned in the request.\n4. Avoid prioritizing aesthetic factors over functional ones unless explicitly stated by the customer.",
+    "train_mrr": 0.6235449735449734,
+    "kept": true
+  },
+  {
+    "round": 5,
+    "instructions": "When ranking products for customer requests, ensure:\n1. The first product listed best matches the customer\u2019s specified needs.\n2. Consider all provided criteria, such as material quality, functionality, and any additional preferences or requirements mentioned.\n3. Prioritize functional factors over aesthetic ones unless explicitly stated by the customer.\n4. Verify that the chosen product aligns with the overall request context and doesn't conflict with other mentioned preferences.\n5. Cross-check with correct products to ensure accuracy in matching needs and criteria.",
+    "train_mrr": 0.6297619047619047,
+    "kept": true
+  }
+]

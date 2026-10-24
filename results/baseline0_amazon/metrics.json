@@ -16,6 +16,11 @@
         "name": "test_full",
         "split": "test",
         "size": null
+      },
+      {
+        "name": "train30",
+        "split": "train",
+        "size": 30
       }
     ],
     "output_dir": "results/baseline0_amazon"
@@ -34,6 +39,13 @@
       "hit@5": 0.6339829476248477,
       "recall@20": 0.5375120854461537,
       "mrr": 0.5096307452123277
+    },
+    "train30": {
+      "n": 30,
+      "hit@1": 0.4,
+      "hit@5": 0.7333333333333333,
+      "recall@20": 0.34424570857784487,
+      "mrr": 0.5405793497282859
     }
   }
 }
